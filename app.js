@@ -1,9 +1,9 @@
 // -----------------------------
 //filenames from gethub (place your CSVs in /data/)
 const FILES = {
-  inflationDetails: 'https://github.com/oelkaraksy/inflation_dashboard/blob/43c63f04d3733dbb7d0a7edbd5e972ce52e96acf/October_Inflation_Data.csv',
-  annualHistory: 'https://github.com/oelkaraksy/inflation_dashboard/blob/43c63f04d3733dbb7d0a7edbd5e972ce52e96acf/Annual_Inflation_Historical_Data.csv',
-  monthlyHistory: 'https://github.com/oelkaraksy/inflation_dashboard/blob/43c63f04d3733dbb7d0a7edbd5e972ce52e96acf/Monthly_Inflation_Historical_Data.csv'
+  inflationDetails: 'https://raw.githubusercontent.com/oelkaraksy/inflation_dashboard/refs/heads/main/October_Inflation_Data.csv',
+  annualHistory: 'https://raw.githubusercontent.com/oelkaraksy/inflation_dashboard/refs/heads/main/Annual_Inflation_Historical_Data.csv',
+  monthlyHistory: 'https://raw.githubusercontent.com/oelkaraksy/inflation_dashboard/refs/heads/main/Monthly_Inflation_Historical_Data.csv'
 };
 
 
@@ -488,4 +488,5 @@ renderPie(mainCategories);
 if(annualData.length) renderLineChart(annualData,'annualLineChart','annual-range','annual-range-value');
 if(monthlyData.length) renderLineChart(monthlyData,'monthlyLineChart','monthly-range','monthly-range-value');
 })();
+
 
