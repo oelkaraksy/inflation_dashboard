@@ -30,7 +30,7 @@ body{
 }
 .muted{
   color:var(--muted);
-  font-size:36px;
+  font-size:24px;
   margin-top:6px
 }
 
@@ -190,3 +190,4 @@ body{
   flex: 1; 
 
 }
+
