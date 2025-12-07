@@ -30,7 +30,7 @@ body{
 }
 .muted{
   color:var(--muted);
-  font-size:16px;
+  font-size:36px;
   margin-top:6px
 }
 
@@ -188,4 +188,5 @@ body{
 
 .summary-col .card {
   flex: 1; 
+
 }
