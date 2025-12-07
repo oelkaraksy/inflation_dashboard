@@ -179,14 +179,14 @@ function createSummaryCards(allItem, prevAnnualEntry, prevMonthlyEntry, latestAn
       <div class="big-number">Annual Inflation Rate </div>
       <div class="big-number">${annualYear}</div>
       <div class="big-big-number">${fmt(latestAnnual)}</div>
-      <div class="small">Last read: ${prevAnnual !== null ? prevAnnual.toFixed(1) + '%' : 'Missing'}</div>
+      <div class="small">Last month: ${prevAnnual !== null ? prevAnnual.toFixed(1) + '%' : 'Missing'}</div>
     </div>
 
     <div class="card">
       <div class="big-number">Monthly Inflation Rate </div>
       <div class="big-number">${monthlyMonthYear}</div>
       <div class="big-big-number">${fmt(latestMonthly)}</div>
-      <div class="small">Last read: ${prevMonthly !== null ? prevMonthly.toFixed(1) + '%' : 'Missing'}</div>
+      <div class="small">Last month: ${prevMonthly !== null ? prevMonthly.toFixed(1) + '%' : 'Missing'}</div>
     </div>
   `;
 }
@@ -488,5 +488,6 @@ renderPie(mainCategories);
 if(annualData.length) renderLineChart(annualData,'annualLineChart','annual-range','annual-range-value');
 if(monthlyData.length) renderLineChart(monthlyData,'monthlyLineChart','monthly-range','monthly-range-value');
 })();
+
 
 
